@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/79d3936d1b.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,15 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <nav class="nav">
-          <button><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav-mobile">
+          <button class="bars"><span class="material-symbols-outlined">
+            menu
+            </span></button>
         </nav>
       </header>
-      <section class="hero">
+      <!-- end of header -->
+
+      <div class="hero">
         <img
           class="hero-img"
           src="./img/_7272557.jpg"
@@ -32,7 +33,7 @@
           width="250px"
         />
         <div class="hero-content">
-          <h2>Hello, I'm Steven</h2>
+          <h3>Hello, I'm Steven</h2>
           <h1>Web Developer and Software Engineer</h1>
         </div>
         <div class="hero-icons">
@@ -46,7 +47,119 @@
             ><img src="./img/icons/instagram.svg" alt="link-instagram" s
           /></a>
         </div>
-      </section>
+      </div>
+      <!-- end of hero -->
+
+      <div id="about">
+        <h2  class="about-h2">About me</h2>
+        <p class="about-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sint numquam cum dicta nihil laudantium aliquid incidunt, quasi delectus assumenda, iusto voluptate iste, corporis fugit harum minima! Consectetur, voluptatem doloribus?
+        </p>
+      </div>
+      <!-- end of about -->
+
+      <div id="habilities">
+        <h2>My Habilities</h2>
+        <div class="habilitie">
+          <div class="habilitie-icon">
+            <img src="./img/icons/mobile.svg" alt="phone-icon">
+          </div>
+          <p class="habilitie-info">Mobile app design</p>
+        </div>
+        <div class="habilitie">
+          <div class="habilitie-icon">
+            <img src="./img/icons/motion.svg" alt="icon-motion">
+          </div>
+          <p class="habilitie-info">Motion Design</p>
+        </div>
+        <div class="habilitie">
+          <div class="habilitie-icon">
+            <img src="./img/icons/material.svg" alt="icon-systems">
+          </div>
+          <p class="habilitie-info">Creation of <br> Design systems</p>
+        </div>
+        <div class="habilitie">
+          <div class="habilitie-icon">
+            <img src="./img/icons/web.svg" alt="icon-web">
+          </div>
+          <p class="habilitie-info">Web Development</p>
+        </div>
+      </div>
+      <!-- end of habilities -->
+
+      <div id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+          <div class="experience-info">
+            <p>2016-2018</p>           
+            <div class="exp-info">
+              <h4>Visual designer</h4>
+              <p>Wizeline</p>
+            </div>
+          </div>
+          <div class="experience-info">         
+            <p>2018-2019</p>         
+            <div class="exp-info">
+              <h4>Product designer</h4>
+              <p>Microsoft</p>
+            </div>
+          </div>
+          <div class="experience-info">
+            <p>2019-2021</p>
+            <div class="exp-info">
+              <h4>UI Engineer</h4>
+              <p>Google</p>
+            </div>
+          </div>
+        </div>         
+      </div>
+      <!-- end of exp -->
+
+      <div id="portfolio">
+        <h2>Portfolio</h2>
+        <a href="#">
+          <img src="./img/ejemplo 1.png" alt="portfolio" class="portfolio-img">
+        </a>
+        <a href="#">
+          <img src="./img/ejemplo 2.png" alt="portfolio" class="portfolio-img">
+        </a>
+        <a href="#">
+          <img src="./img/ejemplo 3.png" alt="portfolio" class="portfolio-img">
+        </a>
+      
+      </div>
+      <!-- end of portfolio -->
+
+      <div id="contact">
+        <h2 id="contact">Contact</h2>
+        <div class="contact-container">
+          <div class="contact-item">
+            <div class="contact-img">
+              <img src="./img/icons/phone.svg" alt="phone-icon">
+            </div>
+            <div class="contact-info">
+              <h4>Cell Phone</h4>
+              <p>5526895424</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-img">
+              <img src="./img/icons/mail 1.svg" alt="email-icon">
+            </div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>steven315@gmail.com</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- end of contact -->
+
+      <footer class="footer">
+        <p>Made with love by Steven Alvarado</p>
+      </footer>
     </div>
   </body>
 </html>
