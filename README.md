@@ -1,1 +1,1 @@
-https://monumental-pixie-dae59f.netlify.app/#portfolio
+https://monumental-pixie-dae59f.netlify.app/
