@@ -96,6 +96,7 @@ p {
 
 .header .nav-desktop a:hover {
   color: var(--grey);
+  transform: scale(1.1);
 }
 
 .container {
@@ -112,11 +113,12 @@ p {
     font-size: 1.4rem;
     position: fixed;
     top: 0;
-    left: 20px;
-    right: 20px;
+    left: 0;
+    right: 0;
     background-color: var(--backgroud-color);
     height: 60px;
     z-index: 3;
+    padding: 0 10px;
   }
 
   .header .nav-desktop ul {
@@ -136,6 +138,9 @@ p {
 @media (min-width: 728px) {
   .header .nav-desktop {
     font-size: var(--font-size-body-desktop);
+  }
+  .header .nav-desktop {
+    padding: 0 50px 0 25%;
   }
 }
 
