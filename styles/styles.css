@@ -40,6 +40,11 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 li {
   list-style: none;
 }
@@ -88,6 +93,10 @@ p {
   display: none;
 }
 
+.header .nav-desktop a:hover {
+  color: var(--grey);
+}
+
 .container {
   width: 80%;
   margin: 10rem auto 0.9rem auto;
@@ -100,11 +109,19 @@ p {
   .header .nav-desktop {
     display: block;
     font-size: 1.4rem;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    background-color: var(--backgroud-color);
+    height: 60px;
+    z-index: 3;
   }
 
   .header .nav-desktop ul {
     display: flex;
     justify-content: space-between;
+    line-height: 60px;
   }
 
   .container {
@@ -121,7 +138,7 @@ p {
   }
 }
 
-.hero {
+#hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,10 +315,14 @@ p {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   #contact .contact-container {
-    width: 30%;
+    width: 40%;
   }
+}
+
+.contact-container .contact-info {
+  margin-top: 10px;
 }
 
 .contact-item .contact-img {
